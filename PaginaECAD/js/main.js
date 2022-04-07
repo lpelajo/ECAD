@@ -40,13 +40,6 @@ window.addEventListener("load", function () {
             const XHR = new XMLHttpRequest();
             const FD = buildJsonFormData(form);
 
-            // FD.append("geradorPor",geradoPor.value);
-            // FD.append("tipo",tipo.value);
-            // FD.append("dtEnvio",dtEnvio.value);
-            // FD.append("dtGeracao",dtGeracao.value);
-            // FD.append("banco",banco.value);
-            // FD.append("arquivo",arquivo.value);
-
             XHR.open("GET", "http://localhost:8080/filesInfo");
 
             XHR.responseType = "json";
@@ -58,20 +51,6 @@ window.addEventListener("load", function () {
             XHR.addEventListener("error", function (event) {
                 alert('Sorry, something went wrong.');
             });
-
-            // var json2 = JSON.stringify($("#arquivo").value);
-
-            // console.log(json2);
-
-            // var json = json2.replaceAll("{", "");
-            // json = json.replaceAll("}", "");
-            // json = json.replaceAll("[", "");
-            // json = json.replaceAll("]", "");
-            // json = json.replaceAll('"name":', "");
-            // json = json.replaceAll(',"value"', "");
-            // json = "{"+json+"}";
-            
-            // console.log(json);
 
             XHR.setRequestHeader("Content-Type", "application/json");
 
