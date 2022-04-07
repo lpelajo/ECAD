@@ -1,0 +1,4 @@
+com\ECAD\ApiECAD\Interface\IFileInfoRepository.class
+com\ECAD\ApiECAD\ApiEcadApplication.class
+com\ECAD\ApiECAD\Config\PreLoadData.class
+com\ECAD\ApiECAD\Model\FileInfo.class

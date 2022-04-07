@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+    
+<persistence-unit name="PersistenceOne">
+    <provider>com.ECAD.ApiECAD</provider>
+    <transaction-type>RESOURCE_LOCAL</transaction-type>
+    <class>com.ECAD.ApiECAD.Model.FileInfo</class> 
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+</persistence-unit>
